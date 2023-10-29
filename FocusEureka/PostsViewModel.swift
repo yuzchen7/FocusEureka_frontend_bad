@@ -17,7 +17,6 @@ class PostsViewModel : ObservableObject{
     }
     
     func handleRefreash(){
-        print("handle refresh triggered")
         posts.removeAll()
         loadData()
     }
@@ -32,14 +31,13 @@ extension PostsViewModel{
         do {
                     let (data, _) = try await URLSession.shared.data(from: url)
                     let fetchedPosts = try JSONDecoder().decode([Posts].self, from: data)
-                    self.posts = fetchedPosts // Assign fetched posts to self.posts
+                    self.posts = fetchedPosts
                 } catch {
-                    print("Errorrrrrrrrrrrrrrrrrrrrr: \(error)")
+                    print("Error: \(error)")
                 }
     }
     
     func loadData() {
-        print("triigged load data")
         Task (priority: .medium){
             try await fetchAllPosts()
         }
