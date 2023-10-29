@@ -11,6 +11,7 @@ struct AllPostsView: View {
     @StateObject var postVM = PostsViewModel()
     var body: some View {
         NavigationStack{
+            //display the title of each posts
             List{
                 ForEach(postVM.posts){ post in
                     Text("\(post.title)")

@@ -9,8 +9,10 @@ import SwiftUI
 
 struct FocusEurekaMainView: View {
     var body: some View {
+        //main view of the app
         TabView{
             Group{
+                //view that display all the posts fetched from backend
                 AllPostsView()
                     .tabItem {
                         Image(systemName: "globe.americas")

@@ -8,9 +8,10 @@
 import Foundation
 
 class PostsViewModel : ObservableObject{
+    //array to store data fetched from backend
     @Published var posts = [Posts]()
-    let baseURL =  "http://localhost:8080/api/posts/"
     
+    let baseURL =  "http://localhost:8080/api/posts/"
     
     init (){
         loadData()
@@ -23,18 +24,19 @@ class PostsViewModel : ObservableObject{
 }
 
 extension PostsViewModel{
+    //network calling to backend 
     @MainActor
     func fetchAllPosts() async throws{
         guard let url = URL(string:baseURL) else{
             return
         }
         do {
-                    let (data, _) = try await URLSession.shared.data(from: url)
-                    let fetchedPosts = try JSONDecoder().decode([Posts].self, from: data)
-                    self.posts = fetchedPosts
-                } catch {
-                    print("Error: \(error)")
-                }
+            let (data, _) = try await URLSession.shared.data(from: url)
+            let fetchedPosts = try JSONDecoder().decode([Posts].self, from: data)
+            self.posts = fetchedPosts
+        } catch {
+            print("Error: \(error)")
+        }
     }
     
     func loadData() {
