@@ -25,7 +25,7 @@ struct Posts: Codable, Identifiable{
     let event: Bool
     let createdAt: String
     let updatedAt: String
-    let image_set: Image_set?
+    let image_set: Image_set
     let owner: Owner
     let postLikes: [PostLikes]?
 }

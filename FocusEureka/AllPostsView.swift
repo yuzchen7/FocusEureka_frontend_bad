@@ -14,6 +14,8 @@ struct AllPostsView: View {
             //display the title of each posts
             List{
                 ForEach(postVM.posts){ post in
+                    AsyncImage(url: URL(string: post.image_set.urls[0]))
+                        .frame(height: 50)
                     Text("\(post.title)")
                 }
             }
