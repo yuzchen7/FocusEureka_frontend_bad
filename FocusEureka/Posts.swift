@@ -30,22 +30,22 @@ struct Posts: Codable, Identifiable{
     let postLikes: [PostLikes]?
 }
 
-struct Image_set: Codable{
-    let post_id: Int
-    let urls: [String]
-}
+//struct Image_set: Codable{
+//    let post_id: Int
+//    let urls: [String]
+//}
 
-struct Owner: Codable {
-    let id: Int
-    let first_name: String
-    let last_name: String
-    let middle_name: String?
-    let username: String
-}
+//struct Owner: Codable {
+//    let id: Int
+//    let first_name: String
+//    let last_name: String
+//    let middle_name: String?
+//    let username: String
+//}
 
-struct PostLikes: Codable{
-    let user_id: Int
-    let post_id: Int
-    let user: Owner
-    
-}
+//struct PostLikes: Codable{
+//    let user_id: Int
+//    let post_id: Int
+//    let user: Owner
+//    
+//}

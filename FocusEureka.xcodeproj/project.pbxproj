@@ -14,6 +14,9 @@
 		2A67AE0D2AEC6D29007856AB /* AllPostsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A67AE0C2AEC6D29007856AB /* AllPostsView.swift */; };
 		2A67AE0F2AEC811D007856AB /* Posts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A67AE0E2AEC811D007856AB /* Posts.swift */; };
 		2A67AE132AEC8C8E007856AB /* PostsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A67AE122AEC8C8E007856AB /* PostsViewModel.swift */; };
+		2AD4036F2AF46318007E84E2 /* Image_set.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AD4036E2AF46318007E84E2 /* Image_set.swift */; };
+		2AD403712AF46400007E84E2 /* Owner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AD403702AF46400007E84E2 /* Owner.swift */; };
+		2AD403732AF4641F007E84E2 /* PostLike.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AD403722AF4641F007E84E2 /* PostLike.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +28,9 @@
 		2A67AE0C2AEC6D29007856AB /* AllPostsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllPostsView.swift; sourceTree = "<group>"; };
 		2A67AE0E2AEC811D007856AB /* Posts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Posts.swift; sourceTree = "<group>"; };
 		2A67AE122AEC8C8E007856AB /* PostsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsViewModel.swift; sourceTree = "<group>"; };
+		2AD4036E2AF46318007E84E2 /* Image_set.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Image_set.swift; sourceTree = "<group>"; };
+		2AD403702AF46400007E84E2 /* Owner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Owner.swift; sourceTree = "<group>"; };
+		2AD403722AF4641F007E84E2 /* PostLike.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostLike.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,9 +66,12 @@
 				2A67ADFE2AEC6B67007856AB /* FocusEurekaApp.swift */,
 				2A67AE002AEC6B67007856AB /* FocusEurekaMainView.swift */,
 				2A67AE0C2AEC6D29007856AB /* AllPostsView.swift */,
-				2A67AE0E2AEC811D007856AB /* Posts.swift */,
-				2A67AE022AEC6B67007856AB /* Assets.xcassets */,
 				2A67AE122AEC8C8E007856AB /* PostsViewModel.swift */,
+				2A67AE022AEC6B67007856AB /* Assets.xcassets */,
+				2A67AE0E2AEC811D007856AB /* Posts.swift */,
+				2AD403702AF46400007E84E2 /* Owner.swift */,
+				2AD4036E2AF46318007E84E2 /* Image_set.swift */,
+				2AD403722AF4641F007E84E2 /* PostLike.swift */,
 				2A67AE042AEC6B67007856AB /* Preview Content */,
 			);
 			path = FocusEureka;
@@ -146,8 +155,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2AD4036F2AF46318007E84E2 /* Image_set.swift in Sources */,
 				2A67AE012AEC6B67007856AB /* FocusEurekaMainView.swift in Sources */,
+				2AD403712AF46400007E84E2 /* Owner.swift in Sources */,
 				2A67AE132AEC8C8E007856AB /* PostsViewModel.swift in Sources */,
+				2AD403732AF4641F007E84E2 /* PostLike.swift in Sources */,
 				2A67AE0D2AEC6D29007856AB /* AllPostsView.swift in Sources */,
 				2A67ADFF2AEC6B67007856AB /* FocusEurekaApp.swift in Sources */,
 				2A67AE0F2AEC811D007856AB /* Posts.swift in Sources */,
