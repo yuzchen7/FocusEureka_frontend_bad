@@ -29,6 +29,7 @@ struct DetailedPostView: View {
                 Text(detailedPost.contents)
             }
         }
+        .ignoresSafeArea()
     }
 }
 

@@ -14,25 +14,32 @@ struct PostsView: View {
             //display the title of each posts
             List{
                 ForEach(postVM.posts){ post in
-                    VStack{
-                        HStack{
-                            AsyncImage(url: URL(string: post.image_set.urls[0])) { fetchedImage in
-                                fetchedImage
-                                    .resizable()
-                                    .aspectRatio(contentMode: .fill)
-                            } placeholder: {
-                                ProgressView()
+                    NavigationLink(
+                        value: post
+                    ){
+                        VStack{
+                            HStack{
+                                AsyncImage(url: URL(string: post.image_set.urls[0])) { fetchedImage in
+                                    fetchedImage
+                                        .resizable()
+                                        .aspectRatio(contentMode: .fill)
+                                } placeholder: {
+                                    ProgressView()
+                                }
+                            }
+                            HStack{
+                                Text("\(post.title)")
                             }
                         }
-                        HStack{
-                            Text("\(post.title)")
-                        }
-                    }
-                    .navigationTitle("Interesting Spot")
-                    .cornerRadius(10)
-                    
+                    }.buttonStyle(PlainButtonStyle())
                 }
             }
+            .navigationTitle("Interesting Spot")
+            .navigationBarTitleDisplayMode(.inline)
+            .navigationDestination(for: Posts.self, destination: { detailPost in
+                DetailedPostView(detailedPost: detailPost)
+            })
+            .cornerRadius(10)
             .refreshable{
                 postVM.handleRefreash()
             }
