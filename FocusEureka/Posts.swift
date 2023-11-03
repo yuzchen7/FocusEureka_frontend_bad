@@ -9,7 +9,14 @@ import Foundation
 
 import SwiftUI
 
-struct Posts: Codable, Identifiable{
+struct Posts: Codable, Identifiable, Hashable{
+    static func == (lhs: Posts, rhs: Posts) -> Bool {
+        return lhs.id == rhs.id
+    }
+    
+    func hash(into hasher: inout Hasher) {
+        hasher.combine(id)
+    }
     let id: Int
     let title: String
     let contents: String
