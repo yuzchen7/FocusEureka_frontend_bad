@@ -13,7 +13,7 @@ struct FocusEurekaMainView: View {
         TabView{
             Group{
                 //view that display all the posts fetched from backend
-                AllPostsView()
+                PostsView()
                     .tabItem {
                         Image(systemName: "globe.americas")
                             .frame(height:500)
