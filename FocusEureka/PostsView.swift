@@ -23,7 +23,7 @@ struct PostsView: View {
                                     AsyncImage(url: URL(string: post.image_set.urls[0])) { fetchedImage in
                                         fetchedImage
                                             .resizable()
-                                            .aspectRatio(contentMode: .fill)
+                                            .aspectRatio(contentMode: .fit)
                                     } placeholder: {
                                         ProgressView()
                                     }
@@ -44,7 +44,7 @@ struct PostsView: View {
                                     AsyncImage(url: URL(string: post.image_set.urls[0])) { fetchedImage in
                                         fetchedImage
                                             .resizable()
-                                            .aspectRatio(contentMode: .fill)
+                                            .aspectRatio(contentMode: .fit)
                                     } placeholder: {
                                         ProgressView()
                                     }
