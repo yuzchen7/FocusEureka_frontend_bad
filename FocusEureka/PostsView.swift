@@ -18,44 +18,10 @@ struct PostsView: View {
                         value: post
                     ){
                         VStack{
-                            VStack(spacing:10){
-                                HStack{
-                                    AsyncImage(url: URL(string: post.image_set.urls[0])) { fetchedImage in
-                                        fetchedImage
-                                            .resizable()
-                                            .aspectRatio(contentMode: .fit)
-                                    } placeholder: {
-                                        ProgressView()
-                                    }
-                                }
-                                HStack{
-                                    Text("\(post.title)")
-                                }
-                            }
-                            .background(.white)
-                            .cornerRadius(10)
-                            .frame(width: UIScreen.main.bounds.width/2-25)
-                            .padding()
+                            CardView(imageURL: post.image_set.urls[0], title: post.title, Likes: post.post_likes?.count ?? 0, posterName: post.owner.username)
                         }
-                        
                         VStack{
-                            VStack(){
-                                HStack{
-                                    AsyncImage(url: URL(string: post.image_set.urls[0])) { fetchedImage in
-                                        fetchedImage
-                                            .resizable()
-                                            .aspectRatio(contentMode: .fit)
-                                    } placeholder: {
-                                        ProgressView()
-                                    }
-                                }
-                                HStack{
-                                    Text("\(post.title)")
-                                }
-                            }
-                            .background(.white)
-                            .frame(width: UIScreen.main.bounds.width/2-25)
-                            .padding()
+                            CardView(imageURL: post.image_set.urls[0], title: post.title, Likes: post.post_likes?.count ?? 0, posterName: post.owner.username)
                         }
                     }
                 }

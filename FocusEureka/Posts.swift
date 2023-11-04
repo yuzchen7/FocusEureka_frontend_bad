@@ -34,7 +34,7 @@ struct Posts: Codable, Identifiable, Hashable{
     let updatedAt: String
     let image_set: Image_set
     let owner: Owner
-    let postLikes: [PostLikes]?
+    let post_likes: [PostLikes]?
 }
 
 //struct Image_set: Codable{
