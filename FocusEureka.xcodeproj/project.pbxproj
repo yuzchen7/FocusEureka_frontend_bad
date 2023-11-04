@@ -68,13 +68,13 @@
 				2A67ADFE2AEC6B67007856AB /* FocusEurekaApp.swift */,
 				2A67AE002AEC6B67007856AB /* FocusEurekaMainView.swift */,
 				2A67AE0C2AEC6D29007856AB /* PostsView.swift */,
+				2AD403742AF4724E007E84E2 /* DetailedPostView.swift */,
 				2A67AE122AEC8C8E007856AB /* PostsViewModel.swift */,
 				2A67AE022AEC6B67007856AB /* Assets.xcassets */,
 				2A67AE0E2AEC811D007856AB /* Posts.swift */,
 				2AD403702AF46400007E84E2 /* Owner.swift */,
 				2AD4036E2AF46318007E84E2 /* Image_set.swift */,
 				2AD403722AF4641F007E84E2 /* PostLike.swift */,
-				2AD403742AF4724E007E84E2 /* DetailedPostView.swift */,
 				2A67AE042AEC6B67007856AB /* Preview Content */,
 			);
 			path = FocusEureka;

@@ -12,34 +12,60 @@ struct PostsView: View {
     var body: some View {
         NavigationStack{
             //display the title of each posts
-            List{
+            ScrollView{
                 ForEach(postVM.posts){ post in
                     NavigationLink(
                         value: post
                     ){
                         VStack{
-                            HStack{
-                                AsyncImage(url: URL(string: post.image_set.urls[0])) { fetchedImage in
-                                    fetchedImage
-                                        .resizable()
-                                        .aspectRatio(contentMode: .fill)
-                                } placeholder: {
-                                    ProgressView()
+                            VStack(spacing:10){
+                                HStack{
+                                    AsyncImage(url: URL(string: post.image_set.urls[0])) { fetchedImage in
+                                        fetchedImage
+                                            .resizable()
+                                            .aspectRatio(contentMode: .fill)
+                                    } placeholder: {
+                                        ProgressView()
+                                    }
+                                }
+                                HStack{
+                                    Text("\(post.title)")
                                 }
                             }
-                            HStack{
-                                Text("\(post.title)")
-                            }
+                            .background(.white)
+                            .cornerRadius(10)
+                            .frame(width: UIScreen.main.bounds.width/2-25)
+                            .padding()
                         }
-                    }.buttonStyle(PlainButtonStyle())
+                        
+                        VStack{
+                            VStack(){
+                                HStack{
+                                    AsyncImage(url: URL(string: post.image_set.urls[0])) { fetchedImage in
+                                        fetchedImage
+                                            .resizable()
+                                            .aspectRatio(contentMode: .fill)
+                                    } placeholder: {
+                                        ProgressView()
+                                    }
+                                }
+                                HStack{
+                                    Text("\(post.title)")
+                                }
+                            }
+                            .background(.white)
+                            .frame(width: UIScreen.main.bounds.width/2-25)
+                            .padding()
+                        }
+                    }
                 }
             }
+            .background(.gray.opacity(0.2))
             .navigationTitle("Interesting Spot")
             .navigationBarTitleDisplayMode(.inline)
             .navigationDestination(for: Posts.self, destination: { detailPost in
                 DetailedPostView(detailedPost: detailPost)
             })
-            .cornerRadius(10)
             .refreshable{
                 postVM.handleRefreash()
             }
