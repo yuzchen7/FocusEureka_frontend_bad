@@ -10,26 +10,51 @@ import SwiftUI
 struct DetailedPostView: View {
     var detailedPost:Posts
     var body: some View {
-        VStack{
-            TabView{
-                ForEach(detailedPost.image_set.urls, id: \.self){picture in
-                    AsyncImage(url: URL(string:picture)) { detailedImage in
-                        detailedImage
-                            .resizable()
-                            .scaledToFit()
-                            .cornerRadius(10)
-                    } placeholder: {
-                        ProgressView()
+        ZStack{
+            VStack{
+                TabView{
+                    ForEach(detailedPost.image_set.urls, id: \.self){picture in
+                        AsyncImage(url: URL(string:picture)) { detailedImage in
+                            detailedImage
+                                .resizable()
+                                .scaledToFit()
+                                .cornerRadius(10)
+                        } placeholder: {
+                            ProgressView()
+                        }
                     }
                 }
-            }
-            .tabViewStyle(.page(indexDisplayMode: .always))
-            .frame(height:250)
-            HStack{
-                Text(detailedPost.contents)
+                .tabViewStyle(.page(indexDisplayMode: .always))
+                .frame(height:250)
+                HStack{
+                    Image(systemName: "location")
+                    Text("\(detailedPost.address)")
+                    VStack{
+                        Text("\(detailedPost.city)")
+                        Text("\(detailedPost.state)")
+                        Text("\(detailedPost.zipcode)")
+                    }.foregroundColor(.blue)
+                }
+                HStack{
+                    Image(systemName: "hourglass")
+                    if let startTime = detailedPost.start_time {
+                        Text("Open at: \(startTime)")
+                    } else {
+                        Text("Open time unavailable")
+                    }
+                    
+                    if let endTime = detailedPost.end_time {
+                        Text("End at: \(endTime)")
+                    } else {
+                        Text("End time unavailable")
+                    }
+                }
+                VStack{
+                    Text(detailedPost.contents)
+                }
+                Spacer()
             }
         }
-        .ignoresSafeArea()
     }
 }
 
