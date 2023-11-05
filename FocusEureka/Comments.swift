@@ -7,7 +7,14 @@
 
 import Foundation
 
-struct Comments: Codable{
+struct Comments: Codable, Hashable{
+    static func == (lhs: Comments, rhs: Comments) -> Bool {
+        return lhs.id == rhs.id
+    }
+    
+    func hash(into hasher: inout Hasher) {
+        hasher.combine(id)
+    }
     let id: Int
     let onwer_id: Int
     let post_id: Int
