@@ -10,6 +10,7 @@ import Foundation
 class PostsViewModel : ObservableObject{
     //array to store data fetched from backend
     @Published var posts = [Posts]()
+    @Published var singlePost:Posts
     
     let baseURL =  "http://localhost:8080/api/posts/"
     
@@ -34,6 +35,21 @@ extension PostsViewModel{
             let (data, _) = try await URLSession.shared.data(from: url)
             let fetchedPosts = try JSONDecoder().decode([Posts].self, from: data)
             self.posts = fetchedPosts
+        } catch {
+            print("Error: \(error)")
+        }
+    }
+    
+    @MainActor
+    func fetchSinglePost(postID: Int) async throws{
+        guard let url = URL(string:baseURL+"postId=\(postID)") else{
+            return
+        }
+        
+        do {
+            let (data, _) = try await URLSession.shared.data(from: url)
+            let fetchedPosts = try JSONDecoder().decode(Posts.self, from: data)
+            self.singlePost = fetchedPosts
         } catch {
             print("Error: \(error)")
         }

@@ -86,6 +86,7 @@ struct DetailedPostView: View {
                     last_name: "Yu",
                     middle_name: nil,
                     username: "Kaifeng99890@gmail.com"),
-                post_likes: nil)
+                post_likes: nil,
+                comments: nil)
     )
 }

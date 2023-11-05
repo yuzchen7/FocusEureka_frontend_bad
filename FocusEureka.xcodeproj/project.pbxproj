@@ -19,6 +19,7 @@
 		2AD403712AF46400007E84E2 /* Owner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AD403702AF46400007E84E2 /* Owner.swift */; };
 		2AD403732AF4641F007E84E2 /* PostLike.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AD403722AF4641F007E84E2 /* PostLike.swift */; };
 		2AD403752AF4724E007E84E2 /* DetailedPostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AD403742AF4724E007E84E2 /* DetailedPostView.swift */; };
+		2AE29A802AF8119C0051734B /* Comments.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AE29A7F2AF8119C0051734B /* Comments.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,7 @@
 		2AD403702AF46400007E84E2 /* Owner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Owner.swift; sourceTree = "<group>"; };
 		2AD403722AF4641F007E84E2 /* PostLike.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostLike.swift; sourceTree = "<group>"; };
 		2AD403742AF4724E007E84E2 /* DetailedPostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailedPostView.swift; sourceTree = "<group>"; };
+		2AE29A7F2AF8119C0051734B /* Comments.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comments.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +80,7 @@
 				2AD403702AF46400007E84E2 /* Owner.swift */,
 				2AD4036E2AF46318007E84E2 /* Image_set.swift */,
 				2AD403722AF4641F007E84E2 /* PostLike.swift */,
+				2AE29A7F2AF8119C0051734B /* Comments.swift */,
 				2A67AE042AEC6B67007856AB /* Preview Content */,
 			);
 			path = FocusEureka;
@@ -165,6 +168,7 @@
 				2A67AE012AEC6B67007856AB /* FocusEurekaMainView.swift in Sources */,
 				2AD403712AF46400007E84E2 /* Owner.swift in Sources */,
 				2A67AE132AEC8C8E007856AB /* PostsViewModel.swift in Sources */,
+				2AE29A802AF8119C0051734B /* Comments.swift in Sources */,
 				2AD403732AF4641F007E84E2 /* PostLike.swift in Sources */,
 				2A67AE0D2AEC6D29007856AB /* PostsView.swift in Sources */,
 				2AD403752AF4724E007E84E2 /* DetailedPostView.swift in Sources */,

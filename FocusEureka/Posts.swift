@@ -35,6 +35,7 @@ struct Posts: Codable, Identifiable, Hashable{
     let image_set: Image_set
     let owner: Owner
     let post_likes: [PostLikes]?
+    let comments:[Comments]?
 }
 
 //struct Image_set: Codable{
