@@ -15,6 +15,8 @@
 		2A67AE0D2AEC6D29007856AB /* PostsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A67AE0C2AEC6D29007856AB /* PostsView.swift */; };
 		2A67AE0F2AEC811D007856AB /* Posts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A67AE0E2AEC811D007856AB /* Posts.swift */; };
 		2A67AE132AEC8C8E007856AB /* PostsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A67AE122AEC8C8E007856AB /* PostsViewModel.swift */; };
+		2AAC87782AF86028000E810C /* CreatePostViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AAC87772AF86028000E810C /* CreatePostViewModel.swift */; };
+		2AAC877A2AF860CF000E810C /* CreatePost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AAC87792AF860CF000E810C /* CreatePost.swift */; };
 		2AD4036F2AF46318007E84E2 /* Image_set.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AD4036E2AF46318007E84E2 /* Image_set.swift */; };
 		2AD403712AF46400007E84E2 /* Owner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AD403702AF46400007E84E2 /* Owner.swift */; };
 		2AD403732AF4641F007E84E2 /* PostLike.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AD403722AF4641F007E84E2 /* PostLike.swift */; };
@@ -32,6 +34,8 @@
 		2A67AE0C2AEC6D29007856AB /* PostsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsView.swift; sourceTree = "<group>"; };
 		2A67AE0E2AEC811D007856AB /* Posts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Posts.swift; sourceTree = "<group>"; };
 		2A67AE122AEC8C8E007856AB /* PostsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsViewModel.swift; sourceTree = "<group>"; };
+		2AAC87772AF86028000E810C /* CreatePostViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePostViewModel.swift; sourceTree = "<group>"; };
+		2AAC87792AF860CF000E810C /* CreatePost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePost.swift; sourceTree = "<group>"; };
 		2AD4036E2AF46318007E84E2 /* Image_set.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Image_set.swift; sourceTree = "<group>"; };
 		2AD403702AF46400007E84E2 /* Owner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Owner.swift; sourceTree = "<group>"; };
 		2AD403722AF4641F007E84E2 /* PostLike.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostLike.swift; sourceTree = "<group>"; };
@@ -69,18 +73,16 @@
 		2A67ADFD2AEC6B67007856AB /* FocusEureka */ = {
 			isa = PBXGroup;
 			children = (
+				2AAC877B2AF86112000E810C /* Models */,
 				2A67ADFE2AEC6B67007856AB /* FocusEurekaApp.swift */,
 				2A67AE002AEC6B67007856AB /* FocusEurekaMainView.swift */,
 				2A67AE0C2AEC6D29007856AB /* PostsView.swift */,
 				2A07F8CE2AF5CD9B00589311 /* CardView.swift */,
 				2AD403742AF4724E007E84E2 /* DetailedPostView.swift */,
 				2A67AE122AEC8C8E007856AB /* PostsViewModel.swift */,
+				2AAC87792AF860CF000E810C /* CreatePost.swift */,
+				2AAC87772AF86028000E810C /* CreatePostViewModel.swift */,
 				2A67AE022AEC6B67007856AB /* Assets.xcassets */,
-				2A67AE0E2AEC811D007856AB /* Posts.swift */,
-				2AD403702AF46400007E84E2 /* Owner.swift */,
-				2AD4036E2AF46318007E84E2 /* Image_set.swift */,
-				2AD403722AF4641F007E84E2 /* PostLike.swift */,
-				2AE29A7F2AF8119C0051734B /* Comments.swift */,
 				2A67AE042AEC6B67007856AB /* Preview Content */,
 			);
 			path = FocusEureka;
@@ -92,6 +94,18 @@
 				2A67AE052AEC6B67007856AB /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		2AAC877B2AF86112000E810C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2AD403702AF46400007E84E2 /* Owner.swift */,
+				2AD4036E2AF46318007E84E2 /* Image_set.swift */,
+				2AD403722AF4641F007E84E2 /* PostLike.swift */,
+				2AE29A7F2AF8119C0051734B /* Comments.swift */,
+				2A67AE0E2AEC811D007856AB /* Posts.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -168,11 +182,13 @@
 				2A67AE012AEC6B67007856AB /* FocusEurekaMainView.swift in Sources */,
 				2AD403712AF46400007E84E2 /* Owner.swift in Sources */,
 				2A67AE132AEC8C8E007856AB /* PostsViewModel.swift in Sources */,
+				2AAC877A2AF860CF000E810C /* CreatePost.swift in Sources */,
 				2AE29A802AF8119C0051734B /* Comments.swift in Sources */,
 				2AD403732AF4641F007E84E2 /* PostLike.swift in Sources */,
 				2A67AE0D2AEC6D29007856AB /* PostsView.swift in Sources */,
 				2AD403752AF4724E007E84E2 /* DetailedPostView.swift in Sources */,
 				2A07F8CF2AF5CD9B00589311 /* CardView.swift in Sources */,
+				2AAC87782AF86028000E810C /* CreatePostViewModel.swift in Sources */,
 				2A67ADFF2AEC6B67007856AB /* FocusEurekaApp.swift in Sources */,
 				2A67AE0F2AEC811D007856AB /* Posts.swift in Sources */,
 			);

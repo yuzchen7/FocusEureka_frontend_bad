@@ -1,15 +1,22 @@
 //
-//  CreatePost.swift
-//  FocusEureka
-//
 //  Created by kai on 11/5/23.
 //
 
 import SwiftUI
-
+import PhotosUI
 struct CreatePost: View {
+    @StateObject var createPostVM = CreatePostViewModel()
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack{
+            Form{
+                Section{
+                    
+                }
+            }
+            PhotosPicker(selection: $createPostVM.inputImage) {
+                Text("Click to add photo")
+            }
+        }
     }
 }
 
