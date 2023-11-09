@@ -10,11 +10,24 @@ struct CreatePost: View {
         VStack{
             Form{
                 Section{
+                    if !createPostVM.selectedImages.isEmpty{
+                        ScrollView(.horizontal, showsIndicators: true) {
+                            HStack{
+                                ForEach(createPostVM.selectedImages, id: \.self) {displayImg in
+                                    Image(uiImage: displayImg)
+                                        .resizable()
+                                        .aspectRatio(contentMode: .fit)
+                                        .frame(width: 175, height: 175)
+                                }
+                            }
+                        }
+                    }
+                    PhotosPicker(selection: $createPostVM.inputImages, matching: .images) {
+                        Text("Upload images")
+                    }
                     
                 }
-            }
-            PhotosPicker(selection: $createPostVM.inputImage) {
-                Text("Click to add photo")
+                
             }
         }
     }
