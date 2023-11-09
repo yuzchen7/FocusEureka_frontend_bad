@@ -40,7 +40,7 @@ class CreatePostViewModel: ObservableObject{
             guard imgData != nil else{
                 return
             }
-            let pathRef = storage.child("images/\(UUID().uuidString).jpg")
+            let pathRef = storage.child("postImages/\(UUID().uuidString).jpg")
             let uploadTask = pathRef.putData(imgData!, metadata: nil) { metadata, error in
                 if (metadata !== nil && error == nil) {
                     
