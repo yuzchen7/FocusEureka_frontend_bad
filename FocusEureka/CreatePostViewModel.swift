@@ -5,7 +5,9 @@
 
 import SwiftUI
 import PhotosUI
+import FirebaseStorage
 
+@MainActor 
 class CreatePostViewModel: ObservableObject{
     @Published var selectedImages: [UIImage] = []
     @Published var inputImages: [PhotosPickerItem] = []{
@@ -25,6 +27,25 @@ class CreatePostViewModel: ObservableObject{
                 }
             }
             selectedImages = images
+        }
+    }
+    
+    func uploadImage(){
+        if selectedImages.isEmpty{
+            return
+        }
+        let storage = Storage.storage().reference()
+        for img in selectedImages{
+            let imgData = img.pngData()
+            guard imgData != nil else{
+                return
+            }
+            let pathRef = storage.child("images/\(UUID().uuidString).jpg")
+            let uploadTask = pathRef.putData(imgData!, metadata: nil) { metadata, error in
+                if (metadata !== nil && error == nil) {
+                    
+                }
+            }
         }
     }
 

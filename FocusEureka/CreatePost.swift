@@ -25,10 +25,13 @@ struct CreatePost: View {
                     PhotosPicker(selection: $createPostVM.inputImages, matching: .images) {
                         Text("Upload images")
                     }
-                    
                 }
-                
             }
+            Button(action: {
+                createPostVM.uploadImage()
+            }, label: {
+                Text("upload to firebase")
+            })
         }
     }
 }
