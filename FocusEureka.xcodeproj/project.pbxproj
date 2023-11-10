@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2AD192442AFEA8AC0010C910 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2AD192432AFEA8AC0010C910 /* GoogleService-Info.plist */; };
 		C474A2342AFDCE890087A4B3 /* FocusEurekaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C474A2332AFDCE890087A4B3 /* FocusEurekaApp.swift */; };
 		C474A2362AFDCE890087A4B3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C474A2352AFDCE890087A4B3 /* ContentView.swift */; };
 		C474A2382AFDCE8B0087A4B3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C474A2372AFDCE8B0087A4B3 /* Assets.xcassets */; };
@@ -14,6 +15,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2AD192432AFEA8AC0010C910 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		C474A2302AFDCE890087A4B3 /* FocusEureka.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FocusEureka.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C474A2332AFDCE890087A4B3 /* FocusEurekaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FocusEurekaApp.swift; sourceTree = "<group>"; };
 		C474A2352AFDCE890087A4B3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -51,6 +53,7 @@
 		C474A2322AFDCE890087A4B3 /* FocusEureka */ = {
 			isa = PBXGroup;
 			children = (
+				2AD192432AFEA8AC0010C910 /* GoogleService-Info.plist */,
 				C474A2332AFDCE890087A4B3 /* FocusEurekaApp.swift */,
 				C474A2352AFDCE890087A4B3 /* ContentView.swift */,
 				C474A2372AFDCE8B0087A4B3 /* Assets.xcassets */,
@@ -127,6 +130,7 @@
 			files = (
 				C474A23B2AFDCE8B0087A4B3 /* Preview Assets.xcassets in Resources */,
 				C474A2382AFDCE8B0087A4B3 /* Assets.xcassets in Resources */,
+				2AD192442AFEA8AC0010C910 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
