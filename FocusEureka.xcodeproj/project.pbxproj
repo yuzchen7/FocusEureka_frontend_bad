@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2A28AB0E2AFED80F0087CAE7 /* Posts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A28AB0D2AFED80F0087CAE7 /* Posts.swift */; };
 		2AD192442AFEA8AC0010C910 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2AD192432AFEA8AC0010C910 /* GoogleService-Info.plist */; };
 		C474A2342AFDCE890087A4B3 /* FocusEurekaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C474A2332AFDCE890087A4B3 /* FocusEurekaApp.swift */; };
 		C474A2362AFDCE890087A4B3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C474A2352AFDCE890087A4B3 /* ContentView.swift */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2A28AB0D2AFED80F0087CAE7 /* Posts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Posts.swift; sourceTree = "<group>"; };
 		2AD192432AFEA8AC0010C910 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		C474A2302AFDCE890087A4B3 /* FocusEureka.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FocusEureka.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C474A2332AFDCE890087A4B3 /* FocusEurekaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FocusEurekaApp.swift; sourceTree = "<group>"; };
@@ -53,6 +55,7 @@
 		C474A2322AFDCE890087A4B3 /* FocusEureka */ = {
 			isa = PBXGroup;
 			children = (
+				2A28AB0D2AFED80F0087CAE7 /* Posts.swift */,
 				2AD192432AFEA8AC0010C910 /* GoogleService-Info.plist */,
 				C474A2332AFDCE890087A4B3 /* FocusEurekaApp.swift */,
 				C474A2352AFDCE890087A4B3 /* ContentView.swift */,
@@ -142,6 +145,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C474A2362AFDCE890087A4B3 /* ContentView.swift in Sources */,
+				2A28AB0E2AFED80F0087CAE7 /* Posts.swift in Sources */,
 				C474A2342AFDCE890087A4B3 /* FocusEurekaApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
