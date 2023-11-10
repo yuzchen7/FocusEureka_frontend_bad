@@ -44,6 +44,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2A28AB192AFEDAAA0087CAE7 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2A28AB152AFED99D0087CAE7 /* Comments.swift */,
+				2A28AB132AFED9780087CAE7 /* Image_set.swift */,
+				2A28AB0F2AFED8D00087CAE7 /* PostLike.swift */,
+				2A28AB112AFED9110087CAE7 /* Owner.swift */,
+				2A28AB0D2AFED80F0087CAE7 /* Posts.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		C474A2272AFDCE890087A4B3 = {
 			isa = PBXGroup;
 			children = (
@@ -63,11 +75,7 @@
 		C474A2322AFDCE890087A4B3 /* FocusEureka */ = {
 			isa = PBXGroup;
 			children = (
-				2A28AB0D2AFED80F0087CAE7 /* Posts.swift */,
-				2A28AB112AFED9110087CAE7 /* Owner.swift */,
-				2A28AB0F2AFED8D00087CAE7 /* PostLike.swift */,
-				2A28AB152AFED99D0087CAE7 /* Comments.swift */,
-				2A28AB132AFED9780087CAE7 /* Image_set.swift */,
+				2A28AB192AFEDAAA0087CAE7 /* Models */,
 				2AD192432AFEA8AC0010C910 /* GoogleService-Info.plist */,
 				C474A2332AFDCE890087A4B3 /* FocusEurekaApp.swift */,
 				C474A2352AFDCE890087A4B3 /* ContentView.swift */,
