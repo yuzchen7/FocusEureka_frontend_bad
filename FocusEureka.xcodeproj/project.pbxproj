@@ -11,6 +11,8 @@
 		C474A2362AFDCE890087A4B3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C474A2352AFDCE890087A4B3 /* ContentView.swift */; };
 		C474A2382AFDCE8B0087A4B3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C474A2372AFDCE8B0087A4B3 /* Assets.xcassets */; };
 		C474A23B2AFDCE8B0087A4B3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C474A23A2AFDCE8B0087A4B3 /* Preview Assets.xcassets */; };
+		C474A2442AFDEA300087A4B3 /* Swiftxios.swift in Sources */ = {isa = PBXBuildFile; fileRef = C474A2432AFDEA300087A4B3 /* Swiftxios.swift */; };
+		C474A2462AFDEAA30087A4B3 /* SwiftxiosCodeable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C474A2452AFDEAA30087A4B3 /* SwiftxiosCodeable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		C474A2352AFDCE890087A4B3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		C474A2372AFDCE8B0087A4B3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C474A23A2AFDCE8B0087A4B3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C474A2432AFDEA300087A4B3 /* Swiftxios.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Swiftxios.swift; sourceTree = "<group>"; };
+		C474A2452AFDEAA30087A4B3 /* SwiftxiosCodeable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftxiosCodeable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +57,7 @@
 			children = (
 				C474A2332AFDCE890087A4B3 /* FocusEurekaApp.swift */,
 				C474A2352AFDCE890087A4B3 /* ContentView.swift */,
+				C474A2412AFDE9E90087A4B3 /* Utils */,
 				C474A2372AFDCE8B0087A4B3 /* Assets.xcassets */,
 				C474A2392AFDCE8B0087A4B3 /* Preview Content */,
 			);
@@ -65,6 +70,23 @@
 				C474A23A2AFDCE8B0087A4B3 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		C474A2412AFDE9E90087A4B3 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				C474A2422AFDEA080087A4B3 /* Swiftxios */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		C474A2422AFDEA080087A4B3 /* Swiftxios */ = {
+			isa = PBXGroup;
+			children = (
+				C474A2432AFDEA300087A4B3 /* Swiftxios.swift */,
+				C474A2452AFDEAA30087A4B3 /* SwiftxiosCodeable.swift */,
+			);
+			path = Swiftxios;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,6 +160,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				C474A2362AFDCE890087A4B3 /* ContentView.swift in Sources */,
+				C474A2462AFDEAA30087A4B3 /* SwiftxiosCodeable.swift in Sources */,
+				C474A2442AFDEA300087A4B3 /* Swiftxios.swift in Sources */,
 				C474A2342AFDCE890087A4B3 /* FocusEurekaApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
