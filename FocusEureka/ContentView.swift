@@ -19,12 +19,12 @@ struct ContentView: View {
                                 .frame(height:500)
                             Text("Expore")
                         }
-//                    CreatePost()
-//                        .tabItem {
-//                            Image(systemName: "plus")
-//                                .frame(height: 10000)
-//                            Text("Post")
-//                        }
+                    CreatePost()
+                        .tabItem {
+                            Image(systemName: "plus")
+                                .frame(height: 10000)
+                            Text("Post")
+                        }
                     Text("Account")
                         .tabItem{
                             Text("tab2")
