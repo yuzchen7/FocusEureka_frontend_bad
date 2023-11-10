@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		2A28AB0E2AFED80F0087CAE7 /* Posts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A28AB0D2AFED80F0087CAE7 /* Posts.swift */; };
 		2A28AB102AFED8D00087CAE7 /* PostLike.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A28AB0F2AFED8D00087CAE7 /* PostLike.swift */; };
+		2A28AB122AFED9110087CAE7 /* Owner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A28AB112AFED9110087CAE7 /* Owner.swift */; };
 		2AD192442AFEA8AC0010C910 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2AD192432AFEA8AC0010C910 /* GoogleService-Info.plist */; };
 		C474A2342AFDCE890087A4B3 /* FocusEurekaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C474A2332AFDCE890087A4B3 /* FocusEurekaApp.swift */; };
 		C474A2362AFDCE890087A4B3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C474A2352AFDCE890087A4B3 /* ContentView.swift */; };
@@ -19,6 +20,7 @@
 /* Begin PBXFileReference section */
 		2A28AB0D2AFED80F0087CAE7 /* Posts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Posts.swift; sourceTree = "<group>"; };
 		2A28AB0F2AFED8D00087CAE7 /* PostLike.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostLike.swift; sourceTree = "<group>"; };
+		2A28AB112AFED9110087CAE7 /* Owner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Owner.swift; sourceTree = "<group>"; };
 		2AD192432AFEA8AC0010C910 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		C474A2302AFDCE890087A4B3 /* FocusEureka.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FocusEureka.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C474A2332AFDCE890087A4B3 /* FocusEurekaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FocusEurekaApp.swift; sourceTree = "<group>"; };
@@ -58,6 +60,7 @@
 			isa = PBXGroup;
 			children = (
 				2A28AB0D2AFED80F0087CAE7 /* Posts.swift */,
+				2A28AB112AFED9110087CAE7 /* Owner.swift */,
 				2A28AB0F2AFED8D00087CAE7 /* PostLike.swift */,
 				2AD192432AFEA8AC0010C910 /* GoogleService-Info.plist */,
 				C474A2332AFDCE890087A4B3 /* FocusEurekaApp.swift */,
@@ -150,6 +153,7 @@
 				2A28AB102AFED8D00087CAE7 /* PostLike.swift in Sources */,
 				C474A2362AFDCE890087A4B3 /* ContentView.swift in Sources */,
 				2A28AB0E2AFED80F0087CAE7 /* Posts.swift in Sources */,
+				2A28AB122AFED9110087CAE7 /* Owner.swift in Sources */,
 				C474A2342AFDCE890087A4B3 /* FocusEurekaApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
