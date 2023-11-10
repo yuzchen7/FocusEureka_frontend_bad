@@ -30,7 +30,7 @@ struct PostsView: View {
             .navigationTitle("Interesting Spot")
             .navigationBarTitleDisplayMode(.inline)
             .navigationDestination(for: Posts.self, destination: { detailPost in
-                DetailedPostView(detailedPost: detailPost)
+                DetailPostView(detailedPost: detailPost)
             })
             .refreshable{
                 postVM.handleRefreash()
