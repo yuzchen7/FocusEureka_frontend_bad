@@ -1,11 +1,5 @@
-//
-//  FocusEurekaApp.swift
-//  FocusEureka
-//
-//  Created by yuz_chen on 11/9/23.
-//
-
 import SwiftUI
+import Firebase
 
 @main
 struct FocusEurekaApp: App {
@@ -13,5 +7,9 @@ struct FocusEurekaApp: App {
         WindowGroup {
             ContentView()
         }
+    }
+    
+    init() {
+        FirebaseApp.configure()
     }
 }
