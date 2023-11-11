@@ -36,7 +36,7 @@ class CreatePostViewModel: ObservableObject{
         }
         let storage = Storage.storage().reference()
         for img in selectedImages{
-            let imgData = img.pngData()
+            let imgData = img.jpegData(compressionQuality: 0.8)
             guard imgData != nil else{
                 return
             }
@@ -44,6 +44,11 @@ class CreatePostViewModel: ObservableObject{
             let uploadTask = pathRef.putData(imgData!, metadata: nil) { metadata, error in
                 if (metadata !== nil && error == nil) {
                     
+                }
+                pathRef.downloadURL { url, error in
+                    guard let downloadURL = url else {
+                          return
+                        }
                 }
             }
         }
