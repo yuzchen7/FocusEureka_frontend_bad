@@ -7,22 +7,32 @@
 
 import Foundation
 
+/// Swiftxios Tools Object
+/// - version
+///     - Swiftxios 0.1.1 alpha
+/// - Since 0.1.1 alpha
+/// for more less code to fetch the api call
+var swiftxios: Swiftxios = Swiftxios.swiftxios
+
 /// Swiftxios Tools
 /// for more less code to fetch the api call
-/// version 0.1.0 alpha
+/// - version 0.1.1 alpha
 final class Swiftxios: ObservableObject {
+    // Since 0.1.0 alpha
     static var swiftxios: Swiftxios = Swiftxios()
     
     private var httpSession: URLSession
     
-    private init() {
+    init() {
         self.httpSession = URLSession.shared
     }
     
-//    init(config: URLSession) {
-//        self.httpSession = config
-//
-//    }
+    /// customize the URLSession for fetching
+    /// - Parameters
+    ///     - config, URLSession object to be set
+    func setHttpSession(config: URLSession) {
+        Swiftxios.swiftxios.httpSession = config
+    }
     
     enum FetchError: Error {
         case invalidURL, invalidResponse, invalidData, invalidObjectConvert
@@ -78,6 +88,22 @@ final class Swiftxios: ObservableObject {
     /// - Throws: There is 4 type of exception will the throw,
     ///           invalidURL, invalidResponse, invalidData, invalidObjectConvert
     /// - Returns: optional object T
+    /// - Example:
+    ///     ```swift
+    ///     try await swiftxios.post(
+    ///        "http://localhost:8080/auth/signup",
+    ///        [
+    ///            "username" : username,
+    ///            "password" : password,
+    ///            "first_name": fname,
+    ///            "last_name": lname,
+    ///            "middle_name": mname
+    ///        ],
+    ///        [
+    ///            "application/json" : "Content-Type"
+    ///        ]
+    ///     )
+    ///    ```
     ///
     /// Swiftxios to fetch the given endpoint ulr make a post request, then return the result data object
     func post<T: Codable>(_ urlEndpoint: String, _ body: [String : Any]? = nil, _ config: [String : String]? = nil) async throws -> T? {
@@ -107,6 +133,15 @@ final class Swiftxios: ObservableObject {
     /// - Throws: There is 4 type of exception will the throw,
     ///           invalidURL, invalidResponse, invalidData, invalidObjectConvert
     /// - Returns: optional object T
+    /// - Example:
+    ///     ```swift
+    ///     try await swiftxios.get(
+    ///        "http://localhost:8080/api/users/",
+    ///        [
+    ///            "application/json" : "Content-Type"
+    ///        ]
+    ///     )
+    ///    ```
     ///
     /// Swiftxios to fetch the given endpoint ulr make a get request, then return the result data object
     func get<T: Codable>(_ urlEndpoint: String, _ config: [String : String]? = nil) async throws -> T? {
