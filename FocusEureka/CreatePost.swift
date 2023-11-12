@@ -27,8 +27,13 @@ struct CreatePost: View {
                     }
                 }
             }
+            if(createPostVM.isLoading){
+                ProgressView()
+            }
             Button(action: {
-                createPostVM.uploadImage()
+                Task{
+                   try await createPostVM.uploadImage()
+                }
             }, label: {
                 Text("upload to firebase")
             })
