@@ -55,7 +55,7 @@
 		C472899D2B01B07E0009B111 /* App */ = {
 			isa = PBXGroup;
 			children = (
-				C4CBF8ED2B00376E0004BDE4 /* ContentView.swift */,
+				C4CBF8EB2B0037460004BDE4 /* FocusEurekaApp.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -81,7 +81,7 @@
 		C47289A22B01B1090009B111 /* Root */ = {
 			isa = PBXGroup;
 			children = (
-				C4CBF8EB2B0037460004BDE4 /* FocusEurekaApp.swift */,
+				C4CBF8ED2B00376E0004BDE4 /* ContentView.swift */,
 			);
 			path = Root;
 			sourceTree = "<group>";
