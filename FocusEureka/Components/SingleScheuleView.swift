@@ -1,6 +1,6 @@
 //
 //  SingleScheuleView.swift
-//  AuthTutorial
+//  FocusEureka
 //
 //  Created by yuz_chen on 11/7/23.
 //

@@ -1,6 +1,6 @@
 //
 //  LoginView.swift
-//  AuthTutorial
+//  FocusEureka
 //
 //  Created by yuz_chen on 10/23/23.
 //

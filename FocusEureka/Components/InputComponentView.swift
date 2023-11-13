@@ -1,6 +1,6 @@
 //
 //  InputComponentView.swift
-//  AuthTutorial
+//  FocusEureka
 //
 //  Created by yuz_chen on 10/26/23.
 //
