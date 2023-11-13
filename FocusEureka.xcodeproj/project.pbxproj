@@ -17,6 +17,7 @@
 		C47289B72B01B9F80009B111 /* SingleScheuleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47289B62B01B9F80009B111 /* SingleScheuleView.swift */; };
 		C47289BA2B01BB020009B111 /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47289B92B01BB020009B111 /* Account.swift */; };
 		C47289BF2B01BB280009B111 /* ScheuleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47289BE2B01BB280009B111 /* ScheuleView.swift */; };
+		C47289C12B01BBE20009B111 /* Schedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47289C02B01BBE20009B111 /* Schedule.swift */; };
 		C474A2382AFDCE8B0087A4B3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C474A2372AFDCE8B0087A4B3 /* Assets.xcassets */; };
 		C474A23B2AFDCE8B0087A4B3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C474A23A2AFDCE8B0087A4B3 /* Preview Assets.xcassets */; };
 		C474A2442AFDEA300087A4B3 /* Swiftxios.swift in Sources */ = {isa = PBXBuildFile; fileRef = C474A2432AFDEA300087A4B3 /* Swiftxios.swift */; };
@@ -36,6 +37,7 @@
 		C47289B62B01B9F80009B111 /* SingleScheuleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleScheuleView.swift; sourceTree = "<group>"; };
 		C47289B92B01BB020009B111 /* Account.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
 		C47289BE2B01BB280009B111 /* ScheuleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheuleView.swift; sourceTree = "<group>"; };
+		C47289C02B01BBE20009B111 /* Schedule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Schedule.swift; sourceTree = "<group>"; };
 		C474A2302AFDCE890087A4B3 /* FocusEureka.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FocusEureka.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C474A2372AFDCE8B0087A4B3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C474A23A2AFDCE8B0087A4B3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -68,6 +70,7 @@
 			isa = PBXGroup;
 			children = (
 				C472899F2B01B0D10009B111 /* User.swift */,
+				C47289C02B01BBE20009B111 /* Schedule.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -288,6 +291,7 @@
 				C47289B72B01B9F80009B111 /* SingleScheuleView.swift in Sources */,
 				C47289BA2B01BB020009B111 /* Account.swift in Sources */,
 				C47289A72B01B6F50009B111 /* LoginView.swift in Sources */,
+				C47289C12B01BBE20009B111 /* Schedule.swift in Sources */,
 				C47289AE2B01B8680009B111 /* ProfileView.swift in Sources */,
 				C47289B52B01B9740009B111 /* SettingRowView.swift in Sources */,
 				C474A2462AFDEAA30087A4B3 /* SwiftxiosCodeable.swift in Sources */,
