@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		C47289A02B01B0D10009B111 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = C472899F2B01B0D10009B111 /* User.swift */; };
 		C47289A72B01B6F50009B111 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47289A62B01B6F50009B111 /* LoginView.swift */; };
+		C47289A92B01B79D0009B111 /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47289A82B01B79D0009B111 /* RegisterView.swift */; };
 		C474A2382AFDCE8B0087A4B3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C474A2372AFDCE8B0087A4B3 /* Assets.xcassets */; };
 		C474A23B2AFDCE8B0087A4B3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C474A23A2AFDCE8B0087A4B3 /* Preview Assets.xcassets */; };
 		C474A2442AFDEA300087A4B3 /* Swiftxios.swift in Sources */ = {isa = PBXBuildFile; fileRef = C474A2432AFDEA300087A4B3 /* Swiftxios.swift */; };
@@ -20,6 +21,7 @@
 /* Begin PBXFileReference section */
 		C472899F2B01B0D10009B111 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		C47289A62B01B6F50009B111 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		C47289A82B01B79D0009B111 /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
 		C474A2302AFDCE890087A4B3 /* FocusEureka.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FocusEureka.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C474A2372AFDCE8B0087A4B3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C474A23A2AFDCE8B0087A4B3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -86,6 +88,7 @@
 			isa = PBXGroup;
 			children = (
 				C47289A62B01B6F50009B111 /* LoginView.swift */,
+				C47289A82B01B79D0009B111 /* RegisterView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -224,6 +227,7 @@
 				C47289A72B01B6F50009B111 /* LoginView.swift in Sources */,
 				C474A2462AFDEAA30087A4B3 /* SwiftxiosCodeable.swift in Sources */,
 				C4CBF8EC2B0037460004BDE4 /* FocusEurekaApp.swift in Sources */,
+				C47289A92B01B79D0009B111 /* RegisterView.swift in Sources */,
 				C4CBF8EE2B00376E0004BDE4 /* ContentView.swift in Sources */,
 				C47289A02B01B0D10009B111 /* User.swift in Sources */,
 				C474A2442AFDEA300087A4B3 /* Swiftxios.swift in Sources */,
