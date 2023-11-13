@@ -123,7 +123,7 @@
 		C47289AC2B01B8530009B111 /* Profile */ = {
 			isa = PBXGroup;
 			children = (
-				C47289AD2B01B8680009B111 /* ProfileView.swift */,
+				C47289C22B01BC200009B111 /* View */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -161,6 +161,14 @@
 				C47289BE2B01BB280009B111 /* ScheuleView.swift */,
 			);
 			path = SubView;
+			sourceTree = "<group>";
+		};
+		C47289C22B01BC200009B111 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C47289AD2B01B8680009B111 /* ProfileView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		C474A2272AFDCE890087A4B3 = {
