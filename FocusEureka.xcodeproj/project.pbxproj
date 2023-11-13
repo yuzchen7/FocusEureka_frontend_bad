@@ -11,8 +11,6 @@
 		C474A23B2AFDCE8B0087A4B3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C474A23A2AFDCE8B0087A4B3 /* Preview Assets.xcassets */; };
 		C474A2442AFDEA300087A4B3 /* Swiftxios.swift in Sources */ = {isa = PBXBuildFile; fileRef = C474A2432AFDEA300087A4B3 /* Swiftxios.swift */; };
 		C474A2462AFDEAA30087A4B3 /* SwiftxiosCodeable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C474A2452AFDEAA30087A4B3 /* SwiftxiosCodeable.swift */; };
-		C4CBF8EC2B0037460004BDE4 /* FocusEurekaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4CBF8EB2B0037460004BDE4 /* FocusEurekaApp.swift */; };
-		C4CBF8EE2B00376E0004BDE4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4CBF8ED2B00376E0004BDE4 /* ContentView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,8 +19,6 @@
 		C474A23A2AFDCE8B0087A4B3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		C474A2432AFDEA300087A4B3 /* Swiftxios.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Swiftxios.swift; sourceTree = "<group>"; };
 		C474A2452AFDEAA30087A4B3 /* SwiftxiosCodeable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftxiosCodeable.swift; sourceTree = "<group>"; };
-		C4CBF8EB2B0037460004BDE4 /* FocusEurekaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FocusEurekaApp.swift; sourceTree = "<group>"; };
-		C4CBF8ED2B00376E0004BDE4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,8 +51,6 @@
 		C474A2322AFDCE890087A4B3 /* FocusEureka */ = {
 			isa = PBXGroup;
 			children = (
-				C4CBF8EB2B0037460004BDE4 /* FocusEurekaApp.swift */,
-				C4CBF8ED2B00376E0004BDE4 /* ContentView.swift */,
 				C474A2412AFDE9E90087A4B3 /* Utils */,
 				C474A2372AFDCE8B0087A4B3 /* Assets.xcassets */,
 				C474A2392AFDCE8B0087A4B3 /* Preview Content */,
@@ -160,8 +154,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				C474A2462AFDEAA30087A4B3 /* SwiftxiosCodeable.swift in Sources */,
-				C4CBF8EC2B0037460004BDE4 /* FocusEurekaApp.swift in Sources */,
-				C4CBF8EE2B00376E0004BDE4 /* ContentView.swift in Sources */,
 				C474A2442AFDEA300087A4B3 /* Swiftxios.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
