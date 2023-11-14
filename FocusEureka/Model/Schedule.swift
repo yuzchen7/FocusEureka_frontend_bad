@@ -7,21 +7,29 @@
 
 import Foundation
 
-class Schedule: Identifiable {
-    // tesing data
-    @Published var schedules: [ScheduleDay] = [
-        ScheduleDay(day: "Sunday", isAvaliable: true),
-        ScheduleDay(day: "Monday", isAvaliable: true),
-        ScheduleDay(day: "Tuesday", isAvaliable: true),
-        ScheduleDay(day: "Wednesday", isAvaliable: true),
-        ScheduleDay(day: "Thursday", isAvaliable: true),
-        ScheduleDay(day: "Friday", isAvaliable: true),
-        ScheduleDay(day: "Saturday", isAvaliable: true)
-    ]
+struct Schedule: Identifiable, Codable {
+    var id: Int
+    var scheduleDay: [ScheduleDay];
+    
+    enum CodingKeys:  String, CodingKey {
+        case id = "user_id",
+             scheduleDay = "schedules"
+    }
+    
 }
 
-struct ScheduleDay: Identifiable {
+struct ScheduleDay: Identifiable, Codable {
     var id: Int = UUID().hashValue
     var day: String
     var isAvaliable: Bool
+    
+    enum CodingKeys:  String, CodingKey {
+        case day = "day",
+             isAvaliable = "isAvaliable"
+    }
+    
+    mutating func setIsAvaliable(isAvaliable: Bool) {
+        self.isAvaliable = isAvaliable
+    }
+    
 }
