@@ -8,7 +8,8 @@
 import SwiftUI
 
 struct ScheuleView: View {
-    var schedule: Schedule = Schedule()
+    
+    var schedule: Schedule
     
     var body: some View {
         VStack {
