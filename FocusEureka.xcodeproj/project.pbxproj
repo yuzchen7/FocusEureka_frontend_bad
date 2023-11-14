@@ -7,18 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C4527D0C2B031CB0000CB45B /* ScheuleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4527D0B2B031CB0000CB45B /* ScheuleViewModel.swift */; };
-		C47289A02B01B0D10009B111 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = C472899F2B01B0D10009B111 /* User.swift */; };
-		C47289A72B01B6F50009B111 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47289A62B01B6F50009B111 /* LoginView.swift */; };
-		C47289A92B01B79D0009B111 /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47289A82B01B79D0009B111 /* RegisterView.swift */; };
-		C47289AB2B01B7FA0009B111 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47289AA2B01B7FA0009B111 /* LoginViewModel.swift */; };
-		C47289AE2B01B8680009B111 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47289AD2B01B8680009B111 /* ProfileView.swift */; };
-		C47289B12B01B8F60009B111 /* InputComponentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47289B02B01B8F60009B111 /* InputComponentView.swift */; };
-		C47289B52B01B9740009B111 /* SettingRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47289B42B01B9740009B111 /* SettingRowView.swift */; };
-		C47289B72B01B9F80009B111 /* SingleScheuleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47289B62B01B9F80009B111 /* SingleScheuleView.swift */; };
-		C47289BA2B01BB020009B111 /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47289B92B01BB020009B111 /* Account.swift */; };
-		C47289BF2B01BB280009B111 /* ScheuleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47289BE2B01BB280009B111 /* ScheuleView.swift */; };
-		C47289C12B01BBE20009B111 /* Schedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47289C02B01BBE20009B111 /* Schedule.swift */; };
 		C474A2382AFDCE8B0087A4B3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C474A2372AFDCE8B0087A4B3 /* Assets.xcassets */; };
 		C474A23B2AFDCE8B0087A4B3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C474A23A2AFDCE8B0087A4B3 /* Preview Assets.xcassets */; };
 		C474A2442AFDEA300087A4B3 /* Swiftxios.swift in Sources */ = {isa = PBXBuildFile; fileRef = C474A2432AFDEA300087A4B3 /* Swiftxios.swift */; };
@@ -26,18 +14,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		C4527D0B2B031CB0000CB45B /* ScheuleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheuleViewModel.swift; sourceTree = "<group>"; };
-		C472899F2B01B0D10009B111 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
-		C47289A62B01B6F50009B111 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
-		C47289A82B01B79D0009B111 /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
-		C47289AA2B01B7FA0009B111 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
-		C47289AD2B01B8680009B111 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
-		C47289B02B01B8F60009B111 /* InputComponentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputComponentView.swift; sourceTree = "<group>"; };
-		C47289B42B01B9740009B111 /* SettingRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingRowView.swift; sourceTree = "<group>"; };
-		C47289B62B01B9F80009B111 /* SingleScheuleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleScheuleView.swift; sourceTree = "<group>"; };
-		C47289B92B01BB020009B111 /* Account.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
-		C47289BE2B01BB280009B111 /* ScheuleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheuleView.swift; sourceTree = "<group>"; };
-		C47289C02B01BBE20009B111 /* Schedule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Schedule.swift; sourceTree = "<group>"; };
 		C474A2302AFDCE890087A4B3 /* FocusEureka.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FocusEureka.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C474A2372AFDCE8B0087A4B3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C474A23A2AFDCE8B0087A4B3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -56,136 +32,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		C4527D082B031C52000CB45B /* Scheule */ = {
-			isa = PBXGroup;
-			children = (
-				C4527D092B031C6C000CB45B /* View */,
-				C4527D0A2B031C83000CB45B /* ViewModel */,
-			);
-			path = Scheule;
-			sourceTree = "<group>";
-		};
-		C4527D092B031C6C000CB45B /* View */ = {
-			isa = PBXGroup;
-			children = (
-				C47289BE2B01BB280009B111 /* ScheuleView.swift */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		C4527D0A2B031C83000CB45B /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-				C4527D0B2B031CB0000CB45B /* ScheuleViewModel.swift */,
-			);
-			path = ViewModel;
-			sourceTree = "<group>";
-		};
-		C472899D2B01B07E0009B111 /* App */ = {
-			isa = PBXGroup;
-			children = (
-				C4CBF8EB2B0037460004BDE4 /* FocusEurekaApp.swift */,
-			);
-			path = App;
-			sourceTree = "<group>";
-		};
-		C472899E2B01B0B80009B111 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				C472899F2B01B0D10009B111 /* User.swift */,
-				C47289C02B01BBE20009B111 /* Schedule.swift */,
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		C47289A12B01B0FB0009B111 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				C4527D082B031C52000CB45B /* Scheule */,
-				C47289A32B01B6B50009B111 /* Authentication */,
-				C47289B82B01BAE60009B111 /* Account */,
-				C47289AC2B01B8530009B111 /* Profile */,
-				C47289A22B01B1090009B111 /* Root */,
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
-		C47289A22B01B1090009B111 /* Root */ = {
-			isa = PBXGroup;
-			children = (
-				C4CBF8ED2B00376E0004BDE4 /* ContentView.swift */,
-			);
-			path = Root;
-			sourceTree = "<group>";
-		};
-		C47289A32B01B6B50009B111 /* Authentication */ = {
-			isa = PBXGroup;
-			children = (
-				C47289A42B01B6C70009B111 /* View */,
-				C47289A52B01B6D20009B111 /* ViewModel */,
-			);
-			path = Authentication;
-			sourceTree = "<group>";
-		};
-		C47289A42B01B6C70009B111 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				C47289A62B01B6F50009B111 /* LoginView.swift */,
-				C47289A82B01B79D0009B111 /* RegisterView.swift */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		C47289A52B01B6D20009B111 /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-				C47289AA2B01B7FA0009B111 /* LoginViewModel.swift */,
-			);
-			path = ViewModel;
-			sourceTree = "<group>";
-		};
-		C47289AC2B01B8530009B111 /* Profile */ = {
-			isa = PBXGroup;
-			children = (
-				C47289C22B01BC200009B111 /* View */,
-			);
-			path = Profile;
-			sourceTree = "<group>";
-		};
-		C47289AF2B01B8AA0009B111 /* Components */ = {
-			isa = PBXGroup;
-			children = (
-				C47289B02B01B8F60009B111 /* InputComponentView.swift */,
-				C47289B42B01B9740009B111 /* SettingRowView.swift */,
-				C47289B62B01B9F80009B111 /* SingleScheuleView.swift */,
-			);
-			path = Components;
-			sourceTree = "<group>";
-		};
-		C47289B82B01BAE60009B111 /* Account */ = {
-			isa = PBXGroup;
-			children = (
-				C47289BB2B01BB070009B111 /* View */,
-			);
-			path = Account;
-			sourceTree = "<group>";
-		};
-		C47289BB2B01BB070009B111 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				C47289B92B01BB020009B111 /* Account.swift */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		C47289C22B01BC200009B111 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				C47289AD2B01B8680009B111 /* ProfileView.swift */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
 		C474A2272AFDCE890087A4B3 = {
 			isa = PBXGroup;
 			children = (
@@ -205,13 +51,6 @@
 		C474A2322AFDCE890087A4B3 /* FocusEureka */ = {
 			isa = PBXGroup;
 			children = (
-<<<<<<< HEAD
-				C472899D2B01B07E0009B111 /* App */,
-				C47289AF2B01B8AA0009B111 /* Components */,
-				C47289A12B01B0FB0009B111 /* Views */,
-				C472899E2B01B0B80009B111 /* Model */,
-=======
->>>>>>> SwiftxiosTool
 				C474A2412AFDE9E90087A4B3 /* Utils */,
 				C474A2372AFDCE8B0087A4B3 /* Assets.xcassets */,
 				C474A2392AFDCE8B0087A4B3 /* Preview Content */,
@@ -314,24 +153,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C47289B72B01B9F80009B111 /* SingleScheuleView.swift in Sources */,
-				C47289BA2B01BB020009B111 /* Account.swift in Sources */,
-				C47289A72B01B6F50009B111 /* LoginView.swift in Sources */,
-				C47289C12B01BBE20009B111 /* Schedule.swift in Sources */,
-				C47289AE2B01B8680009B111 /* ProfileView.swift in Sources */,
-				C47289B52B01B9740009B111 /* SettingRowView.swift in Sources */,
-				C4527D0C2B031CB0000CB45B /* ScheuleViewModel.swift in Sources */,
 				C474A2462AFDEAA30087A4B3 /* SwiftxiosCodeable.swift in Sources */,
-<<<<<<< HEAD
-				C4CBF8EC2B0037460004BDE4 /* FocusEurekaApp.swift in Sources */,
-				C47289A92B01B79D0009B111 /* RegisterView.swift in Sources */,
-				C47289BF2B01BB280009B111 /* ScheuleView.swift in Sources */,
-				C4CBF8EE2B00376E0004BDE4 /* ContentView.swift in Sources */,
-				C47289AB2B01B7FA0009B111 /* LoginViewModel.swift in Sources */,
-				C47289B12B01B8F60009B111 /* InputComponentView.swift in Sources */,
-				C47289A02B01B0D10009B111 /* User.swift in Sources */,
-=======
->>>>>>> SwiftxiosTool
 				C474A2442AFDEA300087A4B3 /* Swiftxios.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
