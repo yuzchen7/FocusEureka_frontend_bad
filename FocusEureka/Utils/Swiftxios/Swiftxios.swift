@@ -149,7 +149,7 @@ final class Swiftxios: ObservableObject {
             throw Swiftxios.FetchError.invalidURL;
         };
         
-        let request: URLRequest = makeRequestObj(url, RequestMethod.GET, config)
+        let request: URLRequest = makeRequestObj(url, RequestMethod.GET, nil, config)
         
         let data: Data = try await makeFetch(request: request)
         

@@ -9,18 +9,31 @@ import SwiftUI
 
 struct ScheuleView: View {
     
-    var schedule: Schedule
+    @Binding var scheuleViewModel: ScheuleViewModel
     
     var body: some View {
-        VStack {
-            // single scheule view
-            ForEach(self.schedule.schedules) {element in
-                SingleScheuleView(day: element.day, isAvailable: element.isAvaliable)
+        if let schedules = scheuleViewModel.schedule {
+            VStack {
+                // single scheule view
+                ForEach(schedules.scheduleDay) {element in
+                    SingleScheuleView(day: element.day, isAvailable: element.isAvaliable)
+                }
             }
         }
     }
 }
 
 #Preview {
-    ScheuleView()
+    let scheuleViewModel = ScheuleViewModel()
+    scheuleViewModel.schedule?.scheduleDay = [
+        ScheduleDay(day: "Sunday", isAvaliable: true),
+        ScheduleDay(day: "Monday", isAvaliable: true),
+        ScheduleDay(day: "Tuesday", isAvaliable: true),
+        ScheduleDay(day: "Wednesday", isAvaliable: true),
+        ScheduleDay(day: "Thursday", isAvaliable: true),
+        ScheduleDay(day: "Firday", isAvaliable: true),
+        ScheduleDay(day: "Saturday", isAvaliable: true)
+    ]
+
+    return ScheuleView(scheuleViewModel: .constant(scheuleViewModel))
 }

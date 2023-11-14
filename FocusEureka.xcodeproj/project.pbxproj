@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C4527D0C2B031CB0000CB45B /* ScheuleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4527D0B2B031CB0000CB45B /* ScheuleViewModel.swift */; };
 		C47289A02B01B0D10009B111 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = C472899F2B01B0D10009B111 /* User.swift */; };
 		C47289A72B01B6F50009B111 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47289A62B01B6F50009B111 /* LoginView.swift */; };
 		C47289A92B01B79D0009B111 /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47289A82B01B79D0009B111 /* RegisterView.swift */; };
@@ -27,6 +28,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C4527D0B2B031CB0000CB45B /* ScheuleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheuleViewModel.swift; sourceTree = "<group>"; };
 		C472899F2B01B0D10009B111 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		C47289A62B01B6F50009B111 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		C47289A82B01B79D0009B111 /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
@@ -58,6 +60,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C4527D082B031C52000CB45B /* Scheule */ = {
+			isa = PBXGroup;
+			children = (
+				C4527D092B031C6C000CB45B /* View */,
+				C4527D0A2B031C83000CB45B /* ViewModel */,
+			);
+			path = Scheule;
+			sourceTree = "<group>";
+		};
+		C4527D092B031C6C000CB45B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C47289BE2B01BB280009B111 /* ScheuleView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C4527D0A2B031C83000CB45B /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				C4527D0B2B031CB0000CB45B /* ScheuleViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		C472899D2B01B07E0009B111 /* App */ = {
 			isa = PBXGroup;
 			children = (
@@ -78,6 +105,7 @@
 		C47289A12B01B0FB0009B111 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				C4527D082B031C52000CB45B /* Scheule */,
 				C47289A32B01B6B50009B111 /* Authentication */,
 				C47289B82B01BAE60009B111 /* Account */,
 				C47289AC2B01B8530009B111 /* Profile */,
@@ -142,7 +170,6 @@
 			isa = PBXGroup;
 			children = (
 				C47289BB2B01BB070009B111 /* View */,
-				C47289BC2B01BB140009B111 /* SubView */,
 			);
 			path = Account;
 			sourceTree = "<group>";
@@ -153,14 +180,6 @@
 				C47289B92B01BB020009B111 /* Account.swift */,
 			);
 			path = View;
-			sourceTree = "<group>";
-		};
-		C47289BC2B01BB140009B111 /* SubView */ = {
-			isa = PBXGroup;
-			children = (
-				C47289BE2B01BB280009B111 /* ScheuleView.swift */,
-			);
-			path = SubView;
 			sourceTree = "<group>";
 		};
 		C47289C22B01BC200009B111 /* View */ = {
@@ -302,6 +321,7 @@
 				C47289C12B01BBE20009B111 /* Schedule.swift in Sources */,
 				C47289AE2B01B8680009B111 /* ProfileView.swift in Sources */,
 				C47289B52B01B9740009B111 /* SettingRowView.swift in Sources */,
+				C4527D0C2B031CB0000CB45B /* ScheuleViewModel.swift in Sources */,
 				C474A2462AFDEAA30087A4B3 /* SwiftxiosCodeable.swift in Sources */,
 				C4CBF8EC2B0037460004BDE4 /* FocusEurekaApp.swift in Sources */,
 				C47289A92B01B79D0009B111 /* RegisterView.swift in Sources */,
