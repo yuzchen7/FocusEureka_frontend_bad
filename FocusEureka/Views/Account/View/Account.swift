@@ -9,8 +9,10 @@ import SwiftUI
 
 struct AccountView: View {
     @EnvironmentObject var loginViewModel: LoginViewModel
-    @State var isShowPost: Bool = false;
-    @State var isShowSchedule: Bool = true;
+    @State var isShowPost: Bool = true;
+    @State var isShowSchedule: Bool = false;
+    
+    @State var scheuleViewModel: ScheuleViewModel = ScheuleViewModel()
     
     var body: some View {
         if let currentUser = self.loginViewModel.currentUser {
@@ -65,6 +67,7 @@ struct AccountView: View {
                             Button(action: {
                                 self.isShowSchedule = false
                                 self.isShowPost = true
+                                self.scheuleViewModel.getScheduleData(userId: currentUser.id)
                             }, label: {
                                 ZStack {
                                     Text("Post")
@@ -98,7 +101,7 @@ struct AccountView: View {
                     // content view section
                     Section {
                         if (self.isShowSchedule) {
-                            ScheuleView()
+                            ScheuleView(scheuleViewModel: $scheuleViewModel)
                         }
                     }
                     .padding(.top)
